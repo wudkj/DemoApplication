@@ -16,13 +16,15 @@
         android:orientation="vertical">
 
         <cn.sumile.progress.HorizontalProgressBar
+            android:id="@+id/progress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            sumile:progress_text_color="#444ab5b9"
-            sumile:progress_unreach_color="#8c3030"
-            sumile:progress_reach_color="#1ab90c"
+            sumile:progress_text_color="#000000"
+            sumile:progress_unreach_color="#169711"
+            sumile:progress_reach_color="#1a36be"
             android:padding="5dp"
-            android:progress="50" />
+            android:progress="35"
+            android:indeterminate="false" />
     </LinearLayout>
 </ScrollView>

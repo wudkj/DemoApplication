@@ -16,4 +16,13 @@
         <attr name="progress_text_size"></attr>
         <attr name="progress_text_offset"></attr>
     </declare-styleable>
+    <declare-styleable name="Ho2">
+        <attr name="progress_unreach_color"></attr>
+        <attr name="progress_unreach_height"></attr>
+        <attr name="progress_reach_color"></attr>
+        <attr name="progress_reach_height"></attr>
+        <attr name="progress_text_color"></attr>
+        <attr name="progress_text_size"></attr>
+        <attr name="progress_text_offset"></attr>
+    </declare-styleable>
 </resources>
