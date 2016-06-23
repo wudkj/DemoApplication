@@ -20,15 +20,15 @@ public class HorizontalProgressBar extends ProgressBar {
     private static final int DEFAULT_HEIGHT_REACH = 2;
     private static final int DEFAULT_TEXT_OFFSET = 10;
 
-    private int mTextSize = spToPx(DEFAULT_TEXT_SIZE);
-    private int mTextColor = DEFAULT_TEXT_COLOR;
-    private int mUnreachHeight = dpToPx(DEFAULT_HEIGHT_UNREACH);
-    private int mUnreachColor = DEFAULT_Color_UNREACH;
-    private int mReachHeight = dpToPx(DEFAULT_HEIGHT_REACH);
-    private int mReachColor = DEFAULT_COLOR_REACH;
-    private int mTextOffset = dpToPx(DEFAULT_TEXT_OFFSET);
+    protected int mTextSize = spToPx(DEFAULT_TEXT_SIZE);
+    protected int mTextColor = DEFAULT_TEXT_COLOR;
+    protected int mUnreachHeight = dpToPx(DEFAULT_HEIGHT_UNREACH);
+    protected int mUnreachColor = DEFAULT_Color_UNREACH;
+    protected int mReachHeight = dpToPx(DEFAULT_HEIGHT_REACH);
+    protected int mReachColor = DEFAULT_COLOR_REACH;
+    protected int mTextOffset = dpToPx(DEFAULT_TEXT_OFFSET);
 
-    private Paint mPaint = new Paint();
+    protected Paint mPaint = new Paint();
 
     private int mRealWidth;
 
@@ -83,7 +83,7 @@ public class HorizontalProgressBar extends ProgressBar {
         float progressX = radio * mRealWidth;
         String text = getProgress() + "%";
         float textWidth = mPaint.measureText(text);
-        if (textWidth + progressX >= mRealWidth) {
+        if (textWidth + progressX > mRealWidth) {
             progressX = mRealWidth - textWidth;
             noNeedUnreach = true;
         }
@@ -127,11 +127,11 @@ public class HorizontalProgressBar extends ProgressBar {
         return result;
     }
 
-    private int spToPx(int spValue) {
+    protected int spToPx(int spValue) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, spValue, getResources().getDisplayMetrics());
     }
 
-    private int dpToPx(int dpValue) {
+    protected int dpToPx(int dpValue) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dpValue, getResources().getDisplayMetrics());
     }
 }

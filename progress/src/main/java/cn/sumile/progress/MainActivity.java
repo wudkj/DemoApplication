@@ -14,6 +14,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
     private TextView tv;
     private ProgressBar progress;
+    private RoundProgressBarWithProgress progress2;
     private int i = 0;
     private Handler mHandler = new Handler() {
         @Override
@@ -22,6 +23,7 @@ public class MainActivity extends Activity {
                 return;
             }
             progress.setProgress(msg.arg1);
+            progress2.setProgress(msg.arg1);
         }
     };
 
@@ -30,6 +32,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         progress = (ProgressBar) findViewById(R.id.progress);
+        progress2 = (RoundProgressBarWithProgress) findViewById(R.id.progress2);
         new Thread() {
             @Override
             public void run() {

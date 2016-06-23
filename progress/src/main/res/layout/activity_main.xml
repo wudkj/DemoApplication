@@ -26,5 +26,17 @@
             android:padding="5dp"
             android:progress="35"
             android:indeterminate="false" />
+        <cn.sumile.progress.RoundProgressBarWithProgress
+            android:id="@+id/progress2"
+            android:layout_width="match_parent"
+            sumile:progress_radius="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            sumile:progress_text_color="#000000"
+            sumile:progress_unreach_color="#169711"
+            sumile:progress_reach_color="#1a36be"
+            android:padding="5dp"
+            android:progress="35"
+            android:indeterminate="false" />
     </LinearLayout>
 </ScrollView>
