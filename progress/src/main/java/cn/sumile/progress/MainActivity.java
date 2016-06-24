@@ -11,6 +11,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * Blog地址：http://sumile.cn/
+ */
 public class MainActivity extends Activity {
     private TextView tv;
     private ProgressBar progress;

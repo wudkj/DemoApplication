@@ -9,7 +9,8 @@ import android.util.TypedValue;
 import android.widget.ProgressBar;
 
 /**
- * Created by zhangxiaokang on 16/6/20.
+ * Created by sumile on 16/6/20.
+ * 当前项目详述地址：http://sumile.cn/archives/1511.html
  */
 public class HorizontalProgressBar extends ProgressBar {
     private static final int DEFAULT_TEXT_SIZE = 10;

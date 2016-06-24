@@ -8,7 +8,8 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 
 /**
- * Created by Administrator on 2016/6/23.
+ * Created by sumile on 2016/6/23.
+ * 当前项目详述地址：http://sumile.cn/archives/1523.html
  */
 public class RoundProgressBarWithProgress extends HorizontalProgressBar {
     private int mRadius = dpToPx(30);
@@ -56,7 +57,7 @@ public class RoundProgressBarWithProgress extends HorizontalProgressBar {
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setColor(mReachColor);
         mPaint.setStrokeWidth(mReachHeight);
-        //画圆  第一个参数是圆的外接正方形，第二三个参数分别为其实度数以及要画的度数，第三个参数表示是否过圆心
+        //画圆  第一个参数是圆的外接正方形，第二三个参数分别为其实度数以及要画的度数，第四个参数表示是否过圆心
         canvas.drawArc(mRectF, 0, sweepAngle, false, mPaint);
 
         //画出文字
